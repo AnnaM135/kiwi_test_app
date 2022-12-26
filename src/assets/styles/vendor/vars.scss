@@ -1,0 +1,48 @@
+//width
+$containerWidth: 1840px;
+$baseFontSize: 18px;
+
+//padding container
+$containerPaddingLeft: 50px;
+$containerPaddingRight: 50px;
+
+$containerPaddingMediaLeft: 30px;
+$containerPaddingMediaRight: 30px;
+
+//breakpoints
+$desktop-sm: 1440px - 1;
+
+$tablets-lg: 1200px - 1;
+$tablets-md: 1024px - 1;
+$tablets-sm: 768px - 1;
+
+$phones-lg: 580px - 1;
+$phones-md: 480px - 1;
+$phones-sm: 320px - 1;
+
+//colors
+$white: #FFFFFF;
+
+$grey_100: #CAD9FF;
+$grey_200: #CFCFCF;
+
+$green_100: #61E224;
+$green_200: #58C925;
+$green_300: #34D35C;
+
+$red_100: #FF0000;
+$red_200: #E04F44;
+
+$black_100: #1E1E1E;
+$black_200:  #1A202C;
+
+$blue_100: #212834;
+$blue_200: #272E3C;
+$blue_300: #2B3548;
+$blue_900: #128994;
+
+$purple_100: #805AD5;
+$purple_200: #996FF8;
+$purple_300: #A37DF9;
+$purple_400: #A588E7;
+$purple_gradient: linear-gradient(180deg, #A37DF9 0%, #7B5AC5 100%);
