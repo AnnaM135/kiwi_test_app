@@ -1,0 +1,99 @@
+._ {
+    padding: 10px 20px 10px 20px;
+
+    &_top {
+        display: flex;
+        justify-content: space-between;
+        &_selects {
+            display: flex;
+            column-gap: 12px;
+            padding-block-start: 8px;
+
+            h4 {
+                font-size: 20px;
+                @include font-axiforma(400);
+            }
+        }
+        &_select {
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient(180deg, #212834 0%, #262F3D 0.01%, #212734 100%);
+            border: 1px solid #A3A0A0;
+            border-radius: 4px;
+            padding: 4px 7px;
+            span{
+                font-size: 14px;
+                @include font-axiforma(400);
+            }
+            &_arrow {
+                width: 6px;
+            }
+        }
+        &_more{
+            color: $purple_100;
+            font-size: 14px;
+            @include font-axiforma(400);
+        }
+    }
+
+    &_icons {
+        @include flexEnd;
+        column-gap: 7px;
+    }
+    &_currency {
+        @include flexEnd;
+        margin-block-start: 12px;
+        &_box {
+            column-gap: 30px;
+            display: flex;
+            width: 250px;
+            border-radius: 4px;
+            background: $blue_100;
+            filter: drop-shadow(0px 2.33514px 2.33514px rgba(0, 0, 0, 0.25));
+            padding: 10px 15px;
+
+            label {
+                display: flex;
+                column-gap: 12px;
+                font-size: 12px;
+                @include font-axiforma(400);
+                cursor: pointer;
+            }
+            label[id='1']{
+                color: $blue_900;
+            }
+            label[id='2']{
+                color: $green_200;
+            }
+            label[id='3']{
+                color: $grey_100;
+            }
+        }
+        &_checkbox {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+        &_checkbox+label {
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+          }
+          &_checkbox+label::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid $purple_100;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 14px 20px;
+          }
+          &_checkbox:checked+label::before {
+            background-color: transparent;
+            background-image: url("data:image/svg+xml,%3Csvg width='13' height='11' viewBox='0 0 13 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.6464 4.75092C4.20957 9.03602 2.91387 7.43799 4.86431 9.67524L11.6598 1.36546' stroke='%2361E224' stroke-width='1.27907'/%3E%3C/svg%3E");
+          }
+    }
+
+}
