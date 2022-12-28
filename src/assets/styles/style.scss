@@ -4,7 +4,7 @@
 }
 
 ::selection {
-    background: $grey_200;
+    background: $purple_100;
     color: $white;
 }
 
@@ -38,9 +38,9 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: $grey_200;    /* color of the scroll thumb */
+    background-color: $purple_100;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 1px solid $grey_200;  /* creates padding around scroll thumb */
+    border: 1px solid $purple_100;  /* creates padding around scroll thumb */
 }
 
 
