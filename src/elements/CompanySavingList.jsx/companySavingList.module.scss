@@ -1,0 +1,62 @@
+._ {
+    display: flex;
+    align-items: center;
+
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+
+    &_open{
+        background: $black_200;
+        padding-block-start: 15px;
+        border-radius: 7px;
+
+        &_content {
+           padding: 13px 20px;
+        }
+    }
+
+    &_company {
+        &_info {
+            display: flex;
+            align-items: center;
+            padding-inline-start: 15px;
+        }
+        &_name{
+            margin-inline-start: 15px;
+            @include font-axiforma(500);
+        }
+        &_percent {
+            margin-inline-start: 30px;
+            font-size: 16px;
+            @include font-axiforma(500);
+        }
+
+        &_desc {
+            margin-block-start: 10px;
+            padding-block-start: 9px;
+            border-top: 1px solid #686868;
+        }
+
+        &_price {
+            margin-inline-end: 30px;
+            font-size: 22px;
+            @include font-axiforma(500);
+        }
+
+        &_item{
+            border-radius: 7px;
+            padding-block-start: 15px;
+            padding-block-end: 15px;
+            &:hover{
+                background: $blue_300;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    &_icons {
+        display: flex;
+        margin-inline-start: 10px;
+    }
+}

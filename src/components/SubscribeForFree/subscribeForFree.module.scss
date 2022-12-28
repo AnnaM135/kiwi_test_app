@@ -1,0 +1,37 @@
+._{
+    padding: 10px 18px 23px;
+
+    &_info {
+        display: flex;
+        align-items: flex-start;
+        margin-block-end: 15px;
+        h3 {
+            @include font-axiforma(500);
+            font-size: 16px;
+            line-height: 26px;
+            padding-block-start: 10px;
+            span {
+                color: $red_200;
+            }
+        }
+    }
+    &_cancel {
+        margin-inline-start: 15px;
+        padding: 8px;
+        border-radius: 50%;
+        background: $black_200;
+
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+
+        &_img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+    &_btn {
+        display: block;
+        margin: 0 auto;
+    }
+}

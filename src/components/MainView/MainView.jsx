@@ -1,9 +1,15 @@
+import { Exchange } from "../Exchange/Exchange";
+import { SubscribeForFree } from "../SubscribeForFree/SubscribeForFree";
 import _ from "./mainView.module.scss";
 export function MainView() {
   return (
     <div className={`${_._} container`}>
-      <div className={_.__box}>component 1</div>
-      <div className={_.__box}>component 2</div>
+      <div className={_.__box}>
+        <Exchange />
+      </div>
+      <div className={_.__box}>
+        <SubscribeForFree />
+      </div>
       <div className={_.__box}>
         <div className={_.__box_area}>component 3</div>
         <div className={_.__box_area}>component 4</div>

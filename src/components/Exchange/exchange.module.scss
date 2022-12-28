@@ -1,0 +1,28 @@
+._{
+    padding: 30px 15px;
+    max-height: 630px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 5px;
+        
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $purple_100;
+        border-radius: 20px;   
+    }
+
+    &_possibillites {
+        display: flex;
+    }
+    
+    &_search {
+        margin-block-start: 7px;
+    }
+    &_savings{
+        margin-block-start: 20px;
+    }
+    
+}
