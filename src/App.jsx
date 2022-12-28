@@ -1,10 +1,11 @@
 import "./assets/styles/style.scss";
+import { HomePage } from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="container">
-      <h1>First setup</h1>
-    </div>
+    <>
+      <HomePage />
+    </>
   );
 }
 

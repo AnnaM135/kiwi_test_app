@@ -1,0 +1,61 @@
+._{
+    border-radius: 10px;
+    padding: 12px 35px 12px 25px;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+
+    // &:hover{
+    //     background: $purple_gradient;
+    // }
+
+    @include desktop-sm {
+        padding: 12px 20px;
+    }
+    @include tablets-lg {
+        padding: 8px 15px;
+    }
+    @include tablets-md {
+        padding: 6px 5px;
+        border-radius: 5px;
+    }
+
+    @include tablets-sm {
+       padding: 12px 35px 12px 25px;
+    //    max-width: 300px;
+    }
+
+    &_link {
+        @include font-axiforma(500);
+        color: $white;
+        text-decoration: none;
+        margin-inline-start: 8px;
+
+        @include tablets-lg {
+            font-size: 15px;
+        }
+        @include tablets-md {
+            font-style: 13px;
+            margin-inline-start: 5px;
+            
+        }
+    }
+    &_icon {
+        @include tablets-md {
+            width: 15px;
+            height: 16px;
+        }
+    }
+    &_arrow {
+        margin-inline-start: 15px;
+        transform: translateY(10px);
+        @include tablets-md {
+            margin-inline-start: 8px;
+            transform: translateY(8px);
+        }
+    }
+}
+
+._active{
+    background: $purple_gradient;
+}

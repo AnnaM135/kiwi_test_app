@@ -1,0 +1,12 @@
+.__img {
+    width: 160px;
+    height: 45px;
+
+    @include desktop-sm {
+        width: 130px;
+    }
+
+    @include tablets-md {
+        width: 100px;
+    }
+}
