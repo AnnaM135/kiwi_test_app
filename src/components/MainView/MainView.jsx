@@ -1,4 +1,9 @@
+import { Analytics } from "../Analytics/Analytics";
+import { Coins } from "../Coins/Coins";
 import { Exchange } from "../Exchange/Exchange";
+import { Futures } from "../Futures/Futures";
+import { Holdings } from "../Holdings/Holdings";
+import { MostUsable } from "../MostUsable/MostUsable";
 import { SubscribeForFree } from "../SubscribeForFree/SubscribeForFree";
 import { TotalPoints } from "../TotalPoints/TotalPoints";
 import _ from "./mainView.module.scss";
@@ -15,12 +20,22 @@ export function MainView() {
         <div className={_.__box_area}>
           <TotalPoints />
         </div>
-        <div className={_.__box_area}>component 4</div>
-        <div className={_.__box_area}>component 5</div>
+        <div className={_.__box_area}>
+          <MostUsable />
+        </div>
+        <div className={_.__box_area}>
+          <Coins />
+        </div>
         <div className={_.__box_area}>component 6</div>
-        <div className={_.__box_area}>component 7</div>
-        <div className={_.__box_area}>component 8</div>
-        <div className={_.__box_area}>component 9</div>
+        <div className={_.__box_area}>
+          <Analytics />
+        </div>
+        <div className={_.__box_area}>
+          <Futures />
+        </div>
+        <div className={_.__box_area}>
+          <Holdings />
+        </div>
       </div>
     </div>
   );

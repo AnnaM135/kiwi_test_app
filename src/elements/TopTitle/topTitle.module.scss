@@ -1,0 +1,15 @@
+._ {
+    display: flex;
+    justify-content: space-between;
+
+    &_title {
+        font-size: 20px;
+        @include font-axiforma(400);
+    }
+
+    &_more{
+        color: $purple_100;
+        font-size: 14px;
+        @include font-axiforma(400);
+    }
+}
