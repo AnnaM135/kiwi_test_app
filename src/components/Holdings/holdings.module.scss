@@ -1,4 +1,17 @@
 ._ {
-    padding: 10px 20px;
-    
+    padding: 10px 0;
+    &_line {
+        padding: 0 20px;
+        margin-block-end: 12px;
+    }
+    &_tr {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        background-color: $blue_200;
+        padding: 15px 40px;
+    }
+    &_burger {
+        margin-inline-start: 50px;
+    }
 }

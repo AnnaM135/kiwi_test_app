@@ -1,0 +1,38 @@
+._ {
+    display: flex;
+    border-bottom: 1px solid $blue_400;
+    padding: 22px 40px;
+    column-gap: 5px;
+    @include font-axiforma(400);
+    font-size: 16px;
+
+    &_name {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        width: 13%;
+    }
+    &_charge {
+        color: $green_300;
+    }
+    &_box{
+        width: 13%;
+    }
+    &_more {
+        width: 50px;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 4px;
+            height: 22px;
+        }
+    }
+    &_img{
+        width: 20px;
+        height: 20px;
+    }
+    &_arrow {
+        width: 7px;
+        height: 5px;
+    }
+}
