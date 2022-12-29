@@ -1,4 +1,4 @@
-import { LineChart } from "../Charts/LineChart/LineChart";
+import { LineChart } from "../Charts/LineChart";
 import _ from "./totalPoints.module.scss";
 import ArrowDownIcon from "../../assets/images/arrow-down.svg";
 import MinimazeIcon from "../../assets/images/minimize-icon.svg";

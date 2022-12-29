@@ -1,4 +1,96 @@
 ._ {
     padding: 10px 20px;
+    &_chart {
+        background-color: #1F2633;
+        background: #1F2633;
+        border: 1px solid #686868;
+        border-radius: 3px;
+        position: relative;        
+    }
+    &_days {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        column-gap: 10px;
+        font-size: 10px;
+        @include font-axiforma(400);
+        padding-left: 5px;
+    }
 
+    &_score {
+        margin-block-start: 7px;
+        margin-block-end: 5px;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(180deg, #2B3341 0%, rgba(61, 73, 95, 0.00693628) 99.99%, rgba(33, 39, 51, 0) 100%);
+        border: 1px solid #686868;
+        border-radius: 5px;
+
+        &_goal {
+            display: flex;
+            column-gap: 10px;
+            margin-block-start: 5px;
+            &_price, &_percent {
+                font-size: 14px;
+                display: flex;
+                @include font-axiforma(400);
+                column-gap: 2px;
+                img{
+                    width: 10px;
+                }
+            }
+
+            &_price{
+                span{
+                    color: $green_100;
+                }
+            }
+            &_percent {
+                span{
+                    color: $red_100;
+                }
+            }
+        }
+
+        &_date {
+            font-size: 11px;
+            @include font-axiforma(500);
+        }
+
+        &_total {
+            padding: 7px 24px;
+            height: 50px;
+            background: linear-gradient(180deg, #2B3341 0%, rgba(61, 73, 95, 0.00693628) 99.99%, rgba(33, 39, 51, 0) 100%);
+            border: 1px solid #686868;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 2px;
+            font-size: 24px;
+            @include font-axiforma(500);
+        }
+    }
+
+    &_balance {
+        display: flex;
+        column-gap: 30px;
+        margin-block-start: 10px;
+        &_box{
+            display: flex;
+            flex-direction: column;
+        }
+        &_title {
+            padding-block-end: 5px;
+            padding-inline-end: 10px;
+            border-bottom: 1px solid $grey_300;
+            font-size: 12px;
+            @include font-axiforma(400);
+        }
+
+        &_price {
+            color: $purple_100;
+            font-size: 12px;
+            @include font-axiforma(400);
+            margin-block-start: 5px;
+        }
+    }
 }
