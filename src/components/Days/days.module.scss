@@ -1,0 +1,19 @@
+._ {
+    background: #212734;
+    border-radius: 3px;
+    position: relative;   
+    
+
+    &_date {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+        @include font-axiforma(400);
+        padding-left: 5px;
+        color: #F2F2F2;
+        font-size: 17px;
+    }
+}

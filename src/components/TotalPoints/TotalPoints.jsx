@@ -47,15 +47,26 @@ export function TotalPoints() {
             type="checkbox"
             checked
             id="USD"
+            onChange={(e) => e.target.value}
           />
           <label htmlFor="USD" id="1">
             USD
           </label>
-          <input className={_.__currency_checkbox} type="checkbox" id="BTC" />
+          <input
+            className={_.__currency_checkbox}
+            type="checkbox"
+            id="BTC"
+            onChange={(e) => e.target.value}
+          />
           <label htmlFor="BTC" id="2">
             BTC
           </label>
-          <input className={_.__currency_checkbox} type="checkbox" id="ETH" />
+          <input
+            className={_.__currency_checkbox}
+            type="checkbox"
+            id="ETH"
+            onChange={(e) => e.target.value}
+          />
           <label htmlFor="ETH" id="3">
             ETH
           </label>

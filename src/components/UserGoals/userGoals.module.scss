@@ -1,0 +1,46 @@
+._{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &_data {
+        display: flex;
+        padding: 20px;
+
+        &_img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: $purple_400;
+            display: grid;
+            place-items: center;
+            font-size: 24px;
+            @include tablets-md {
+                width: 30px;
+                height: 30px;
+                font-size: 14px;
+            }
+
+            span {
+                @include font-axiforma(400);
+            }
+        }
+
+        &_box {
+            display: flex;
+            flex-direction: column;
+            margin-inline-start: 25px;
+        }
+
+        &_price {
+            @include font-axiforma(300);
+            font-size: 24px;
+            color: #805AD5;
+        }
+
+        &_name {
+            @include font-axiforma(400);
+        }
+    }
+}
