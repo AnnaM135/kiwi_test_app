@@ -93,5 +93,5 @@ export function BarChart() {
     };
     setChartData(chartData);
   }, []);
-  return <Bar options={options} data={chartData} ref={chartRef} />;
+  return <Bar options={options} data={chartData} ref={chartRef} height="180px" />;
 }
