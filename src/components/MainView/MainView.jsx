@@ -1,5 +1,4 @@
 import { Analytics } from "../Analytics/Analytics";
-import { BarChart } from "../Charts/BarChart";
 import { Coins } from "../Coins/Coins";
 import { Exchange } from "../Exchange/Exchange";
 import { Futures } from "../Futures/Futures";
@@ -9,7 +8,7 @@ import { SubscribeForFree } from "../SubscribeForFree/SubscribeForFree";
 import { TotalPoints } from "../TotalPoints/TotalPoints";
 import { UserGoals } from "../UserGoals/UserGoals";
 import _ from "./mainView.module.scss";
-export function MainView() {
+function MainView() {
   return (
     <div className={`${_._} container`}>
       <div className={_.__box}>
@@ -44,3 +43,5 @@ export function MainView() {
     </div>
   );
 }
+
+export default MainView;

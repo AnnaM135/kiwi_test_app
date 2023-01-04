@@ -1,11 +1,13 @@
-import { Header } from "../components/Header/Header";
-import { MainView } from "../components/MainView/MainView";
+import React, {lazy, Suspense } from 'react'
+const Header = lazy(() => import('../components/Header/Header'));
+const MainView = lazy(() => import('../components/MainView/MainView'));
+
 
 export function HomePage() {
   return (
-    <div>
+    <Suspense fallback={<div>Loading...</div>}>
       <Header />
       <MainView />
-    </div>
+    </Suspense>
   );
 }

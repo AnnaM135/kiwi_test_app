@@ -8,7 +8,7 @@ export function SavingList({ data }) {
   return (
     <div className={!data.isOpen ? _._ : _.__open}>
       <div className={_.__company_info}>
-        <img src={data.companyIcon} alt="company icon" />
+        <img className={_.__company_img} src={data.companyIcon} alt="company icon" />
         <h4 className={_.__company_name}>{data.companyName}</h4>
         <span
           className={_.__company_percent}
@@ -20,7 +20,7 @@ export function SavingList({ data }) {
       {!data.isOpen ? (
         <div className={_.__icons}>
           <img src={RedDiagram} alt="diagram" />
-          <img src={EditIcon} alt="edit icon" />
+          <img className={_.__icons_edit} src={EditIcon} alt="edit icon" />
           <img src={DeleteIcon} alt="delete icon" />
         </div>
       ) : (

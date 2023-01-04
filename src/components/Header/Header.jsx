@@ -3,7 +3,7 @@ import { Navbar } from "../Navbar/Navbar";
 import _ from "./header.module.scss";
 import ModeIcon from "../../assets/images/header/mode.svg";
 
-export function Header() {
+function Header() {
   return (
     <header className={_._}>
       <div className={`${_.__content} container`}>
@@ -19,3 +19,4 @@ export function Header() {
     </header>
   );
 }
+export default Header;

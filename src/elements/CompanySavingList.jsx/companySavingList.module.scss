@@ -25,6 +25,10 @@
             margin-inline-start: 15px;
             @include font-axiforma(500);
         }
+        &_img {
+            width: 27px;
+            height: 26px;
+        }
         &_percent {
             margin-inline-start: 30px;
             font-size: 16px;
@@ -58,5 +62,9 @@
     &_icons {
         display: flex;
         margin-inline-start: 10px;
+        &_edit {
+            width: 39px;
+            height: 38px;
+        }
     }
 }
